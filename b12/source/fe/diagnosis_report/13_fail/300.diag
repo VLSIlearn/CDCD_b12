@@ -1,0 +1,131 @@
+run_diagnosis ./tmax_fail/13_fail/300.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 301 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/13_fail/300.fail
+ #failing_pat=301, #failures=301, #defects=1, #faults=7, CPU_time=0.32
+ Simulated : #failing_pat=301, #passing_pat=19, #failures=301
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=7, #failing_pat=301, #passing_pat=19, #failures=301
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=301, passing=19>
+ sa01   DS   g_U2081/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=301, passing=19>
+ sa01   DS   g_U1595_TMP/A2   (AND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=301, passing=19>
+ sa01   DS   g_U1595_TMP/ZN   (AND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=301, passing=19>
+ sa01   DS   g_U1595/ZN   (AND4_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=301, passing=19>
+ sa01   DS   g_U1389/ZN   (NAND4_X1)
+ sa01   --   U1389   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=301, passing=19>
+ sa01   DS   g_U1595/A1   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.67%, #explained patterns: <failing=300, passing=19>
+ sa1   DS   U1389   (_PO)
+ sa1   --   g_U1389/ZN   (NAND4_X1)
+ sa0   --   g_U1389/A1   (NAND4_X1)
+ sa0   --   g_U1389/A2   (NAND4_X1)
+ sa0   --   g_U1389/A3   (NAND4_X1)
+ sa0   --   g_U1389/A4   (NAND4_X1)
+ sa0   --   g_U1599/ZN   (AND4_X1)
+ sa0   --   g_U1599/A1   (AND4_X1)
+ sa0   --   g_U1599/A2   (AND4_X1)
+ sa0   --   g_U1599/A3   (AND4_X1)
+ sa0   --   g_U1599/A4   (AND4_X1)
+ sa0   --   g_U1597/ZN   (AND4_X1)
+ sa0   --   g_U1597/A1   (AND4_X1)
+ sa0   --   g_U1597/A2   (AND4_X1)
+ sa0   --   g_U1597/A3   (AND4_X1)
+ sa0   --   g_U1597/A4   (AND4_X1)
+ sa0   --   g_U1595/ZN   (AND4_X1)
+ sa0   --   g_U1595/A1   (AND4_X1)
+ sa0   --   g_U1595/A2   (AND4_X1)
+ sa0   --   g_U1595/A3   (AND4_X1)
+ sa0   --   g_U1595/A4   (AND4_X1)
+ sa0   --   g_U1593/ZN   (AND4_X1)
+ sa0   --   g_U1593/A1   (AND4_X1)
+ sa0   --   g_U1593/A2   (AND4_X1)
+ sa0   --   g_U1593/A3   (AND4_X1)
+ sa0   --   g_U1593/A4   (AND4_X1)
+ sa0   --   g_U1599_TMP/ZN   (AND2_X1)
+ sa0   --   g_U1599_TMP/A1   (AND2_X1)
+ sa0   --   g_U1599_TMP/A2   (AND2_X1)
+ sa0   --   g_U2096/ZN   (NAND2_X1)
+ sa0   --   g_U2095/ZN   (NAND2_X1)
+ sa0   --   g_U1598/ZN   (AND4_X1)
+ sa0   --   g_U1598/A1   (AND4_X1)
+ sa0   --   g_U1598/A2   (AND4_X1)
+ sa0   --   g_U1598/A3   (AND4_X1)
+ sa0   --   g_U1598/A4   (AND4_X1)
+ sa0   --   g_U1597_TMP/ZN   (AND2_X1)
+ sa0   --   g_U1597_TMP/A1   (AND2_X1)
+ sa0   --   g_U1597_TMP/A2   (AND2_X1)
+ sa0   --   g_U2088/ZN   (NAND2_X1)
+ sa0   --   g_U2087/ZN   (NAND2_X1)
+ sa0   --   g_U1596/ZN   (AND4_X1)
+ sa0   --   g_U1596/A1   (AND4_X1)
+ sa0   --   g_U1596/A2   (AND4_X1)
+ sa0   --   g_U1596/A3   (AND4_X1)
+ sa0   --   g_U1596/A4   (AND4_X1)
+ sa0   --   g_U1595_TMP/ZN   (AND2_X1)
+ sa0   --   g_U1595_TMP/A1   (AND2_X1)
+ sa0   --   g_U1595_TMP/A2   (AND2_X1)
+ sa0   --   g_U2080/ZN   (NAND2_X1)
+ sa0   --   g_U2079/ZN   (NAND2_X1)
+ sa0   --   g_U1594/ZN   (AND4_X1)
+ sa0   --   g_U1594/A1   (AND4_X1)
+ sa0   --   g_U1594/A2   (AND4_X1)
+ sa0   --   g_U1594/A3   (AND4_X1)
+ sa0   --   g_U1594/A4   (AND4_X1)
+ sa0   --   g_U1593_TMP/ZN   (AND2_X1)
+ sa0   --   g_U1593_TMP/A1   (AND2_X1)
+ sa0   --   g_U1593_TMP/A2   (AND2_X1)
+ sa0   --   g_U2072/ZN   (NAND2_X1)
+ sa0   --   g_U2071/ZN   (NAND2_X1)
+ sa0   --   g_U1592/ZN   (AND4_X1)
+ sa0   --   g_U1592/A1   (AND4_X1)
+ sa0   --   g_U1592/A2   (AND4_X1)
+ sa0   --   g_U1592/A3   (AND4_X1)
+ sa0   --   g_U1592/A4   (AND4_X1)
+ sa0   --   g_U2098/ZN   (NAND2_X1)
+ sa0   --   g_U2097/ZN   (NAND2_X1)
+ sa0   --   g_U2094/ZN   (NAND2_X1)
+ sa0   --   g_U2093/ZN   (NAND2_X1)
+ sa0   --   g_U2092/ZN   (NAND2_X1)
+ sa0   --   g_U2091/ZN   (NAND2_X1)
+ sa0   --   g_U2090/ZN   (NAND2_X1)
+ sa0   --   g_U2089/ZN   (NAND2_X1)
+ sa0   --   g_U2086/ZN   (NAND2_X1)
+ sa0   --   g_U2085/ZN   (NAND2_X1)
+ sa0   --   g_U2084/ZN   (NAND2_X1)
+ sa0   --   g_U2083/ZN   (NAND2_X1)
+ sa0   --   g_U2082/ZN   (NAND2_X1)
+ sa0   --   g_U2081/ZN   (NAND2_X1)
+ sa0   --   g_U2078/ZN   (NAND2_X1)
+ sa0   --   g_U2077/ZN   (NAND2_X1)
+ sa0   --   g_U2076/ZN   (NAND2_X1)
+ sa0   --   g_U2075/ZN   (NAND2_X1)
+ sa0   --   g_U2074/ZN   (NAND2_X1)
+ sa0   --   g_U2073/ZN   (NAND2_X1)
+ sa0   --   g_U2070/ZN   (NAND2_X1)
+ sa0   --   g_U2069/ZN   (NAND2_X1)
+ sa0   --   g_U2068/ZN   (NAND2_X1)
+ sa0   --   g_U2067/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/13_stil/301.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/13_stil/301.stil with 0 errors.
+ End reading 322 patterns, CPU_time = 0.08 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/13_fail/301.diag

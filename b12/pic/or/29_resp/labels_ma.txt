@@ -1,0 +1,4 @@
+or-29_resp_1.bmp 1.0
+or-29_resp_2.bmp 1.0
+or-29_resp_3.bmp 1.0
+or-29_resp_all.bmp 1

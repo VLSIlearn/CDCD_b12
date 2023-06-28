@@ -1,0 +1,83 @@
+run_diagnosis ./tmax_fail/48_fail/8.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 9 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/48_fail/8.fail
+ #failing_pat=9, #failures=9, #defects=1, #faults=17, CPU_time=0.04
+ Simulated : #failing_pat=9, #passing_pat=34, #failures=9
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=17, #failing_pat=9, #passing_pat=34, #failures=9
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1581_TMP/A1   (AND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1581_TMP/A2   (AND2_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1581_TMP/ZN   (AND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1386/A3   (NAND3_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1386/A2   (NAND3_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1386/A1   (NAND3_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1582/ZN   (AND4_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1582/A4   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1582/A2   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1582/A1   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1582/A3   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1581/ZN   (AND4_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1581/A3   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1581/A1   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1581/A2   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa0   DS   g_U1581/A4   (AND4_X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=25.00%, #explained patterns: <failing=9, passing=6>
+ sa1   DS   g_U1386/ZN   (NAND3_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/48_stil/9.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/48_stil/9.stil with 0 errors.
+ End reading 77 patterns, CPU_time = 0.01 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/48_fail/9.diag

@@ -1,0 +1,62 @@
+run_diagnosis ./tmax_fail/71_fail/219.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 686 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/71_fail/219.fail
+ #failing_pat=220, #failures=686, #defects=3, #faults=11, CPU_time=0.11
+ Simulated : #failing_pat=220, #passing_pat=67, #failures=686
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=8, #failing_pat=215, #passing_pat=72, #failures=681
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=237, passing=68>
+ sa01   DS   g_U1638/ZN   (NAND3_X1)
+ Internal_cell_type (cell_internal)
+ ------------------------------------------------------------------------------
+ match=92.98%, #explained patterns: <failing=209, passing=49>
+ sa1   DS   g_U1630/ZN   (INV_X1)
+ sa0   --   g_U1630/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=74.00%, #explained patterns: <failing=178, passing=60>
+ sa1   DS   g_U1502/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=73.80%, #explained patterns: <failing=179, passing=53>
+ sa1   DS   g_U1503/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=72.37%, #explained patterns: <failing=186, passing=26>
+ sa1   DS   g_U1612/ZN   (INV_X1)
+ sa0   --   g_U1612/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=72.02%, #explained patterns: <failing=186, passing=26>
+ sa0   DS   g_U1502/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=68.44%, #explained patterns: <failing=187, passing=27>
+ sa1   DS   g_U1610/ZN   (INV_X1)
+ sa0   --   g_U1610/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=68.20%, #explained patterns: <failing=187, passing=27>
+ sa0   DS   g_U1503/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=4, #passing_pat=283, #failures=4
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=283>
+ sa1   DS   g_U1946/ZN   (NAND2_X1)
+ sa0   --   g_U1946/A2   (NAND2_X1)
+ sa0   --   g_U1946/A1   (NAND2_X1)
+ sa1   --   g_U1401/A1   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: stuck fault model, #faults=2, #failing_pat=1, #passing_pat=286, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=286>
+ sa1   DS   g_R745_U26/ZN   (NAND2_X1)
+ sa0   --   g_R745_U26/A1   (NAND2_X1)
+ sa0   --   g_R745_U26/A2   (NAND2_X1)
+ sa1   --   g_R745_U9/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=286>
+ sa0   DS   TIMEBASE_REG_1__SCAN_IN   (_PI)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/71_stil/22.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/71_stil/22.stil with 0 errors.
+ End reading 35 patterns, CPU_time = 0.01 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/71_fail/22.diag

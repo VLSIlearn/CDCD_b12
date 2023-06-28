@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/67_fail/152.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 217 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/67_fail/152.fail
+ #failing_pat=153, #failures=217, #defects=3, #faults=3, CPU_time=0.38
+ Simulated : #failing_pat=153, #passing_pat=57, #failures=217
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=153, #passing_pat=57, #failures=179
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=153, passing=57>
+ sa0   DS   g_U1606/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=28, #passing_pat=182, #failures=38
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=28, passing=182>
+ sa1   DS   g_U2023/ZN   (NAND2_X1)
+ sa0   --   g_U2023/A1   (NAND2_X1)
+ sa0   --   g_U2023/A2   (NAND2_X1)
+ sa1   --   g_U2024/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: transition fault model, #faults=1, #failing_pat=2, #passing_pat=208, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=208>
+ str   DS   g_U1526/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/67_stil/153.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/67_stil/153.stil with 0 errors.
+ End reading 212 patterns, CPU_time = 0.02 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/67_fail/153.diag

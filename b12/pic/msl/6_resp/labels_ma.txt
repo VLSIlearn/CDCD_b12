@@ -1,0 +1,6 @@
+msl-6_resp_1.bmp 0.5333333333333333
+msl-6_resp_2.bmp 0.8571428571428571
+msl-6_resp_3.bmp 1.0
+msl-6_resp_4.bmp 1.0
+msl-6_resp_5.bmp 1.0
+msl-6_resp_all.bmp 1

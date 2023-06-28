@@ -1,0 +1,41 @@
+run_diagnosis ./tmax_fail/47_fail/32.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 61 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/47_fail/32.fail
+ #failing_pat=33, #failures=61, #defects=2, #faults=6, CPU_time=0.01
+ Simulated : #failing_pat=33, #passing_pat=18, #failures=61
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=30, #passing_pat=21, #failures=58
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=30, passing=21>
+ sa1   DS   g_U1643/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=5, #failing_pat=3, #passing_pat=48, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=48>
+ sa1   DS   g_R785_U25/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=48>
+ sa1   DS   g_R785_U13/ZN   (NAND2_X1)
+ sa0   --   g_R785_U13/A2   (NAND2_X1)
+ sa0   --   g_R785_U13/A1   (NAND2_X1)
+ sa0   --   g_R785_U24/ZN   (NAND2_X1)
+ sa0   --   g_R785_U25/ZN   (NAND2_X1)
+ sa1   --   g_U1858/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=48>
+ sa1   DS   g_R785_U24/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=48>
+ sa1   DS   g_R785_U17/ZN   (INV_X1)
+ sa0   --   g_R785_U17/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=48>
+ sa0   DS   g_R785_U7/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/47_stil/33.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/47_stil/33.stil with 0 errors.
+ End reading 52 patterns, CPU_time = 0.01 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/47_fail/33.diag

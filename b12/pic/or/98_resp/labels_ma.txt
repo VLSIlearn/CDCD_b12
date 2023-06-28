@@ -1,0 +1,4 @@
+or-98_resp_1.bmp 0.08333333333333333
+or-98_resp_2.bmp 0.5
+or-98_resp_3.bmp 1.0
+or-98_resp_all.bmp 1

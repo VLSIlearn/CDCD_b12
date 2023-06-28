@@ -1,0 +1,119 @@
+run_diagnosis ./tmax_fail/91_fail/114.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 142 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/91_fail/114.fail
+ #failing_pat=115, #failures=142, #defects=4, #faults=26, CPU_time=0.15
+ Simulated : #failing_pat=115, #passing_pat=24, #failures=142
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=112, #passing_pat=27, #failures=132
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=112, passing=27>
+ sa0   DS   g_U1497/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=112, passing=27>
+ sa1   DS   g_U1655/ZN   (INV_X1)
+ sa0   --   g_U1655/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=5, #failing_pat=9, #passing_pat=130, #failures=9
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=9, passing=130>
+ sa1   DS   g_R745_U15/ZN   (NAND2_X1)
+ sa0   --   g_R745_U15/A2   (NAND2_X1)
+ sa0   --   g_R745_U15/A1   (NAND2_X1)
+ sa0   --   g_R745_U27/ZN   (NAND2_X1)
+ sa0   --   g_R745_U28/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=9, passing=130>
+ sa1   DS   g_R745_U27/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=9, passing=130>
+ sa1   DS   g_R745_U23/ZN   (INV_X1)
+ sa0   --   g_R745_U23/A   (INV_X1)
+ sa1   --   g_R745_U28/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=90.00%, #explained patterns: <failing=9, passing=129>
+ sa0   DS   g_R745_U18/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=69.23%, #explained patterns: <failing=9, passing=126>
+ sa1   DS   g_U1375/ZN   (NAND2_X1)
+ sa0   --   g_U1375/A2   (NAND2_X1)
+ sa0   --   g_U1375/A1   (NAND2_X1)
+ sa0   --   g_U1601/ZN   (INV_X1)
+ sa1   --   g_U1601/A   (INV_X1)
+ sa0   --   g_U2100/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: transition fault model, #faults=17, #failing_pat=12, #passing_pat=127, #failures=15
+ ------------------------------------------------------------------------------
+ match=86.67%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1370/ZN   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=86.67%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1896/ZN   (NAND2_X1)
+ str   --   g_U1370/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=11, passing=127>
+ str   DS   g_U1500/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=11, passing=127>
+ stf   DS   GAMMA_REG_2__SCAN_IN   (_PI)
+ stf   --   g_U1500/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=80.00%, #explained patterns: <failing=11, passing=127>
+ stf   DS   g_U1616/ZN   (INV_X1)
+ str   --   g_U1616/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1386/A2   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1582/A3   (AND4_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1581_TMP/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1581_TMP/ZN   (AND2_X1)
+ str   --   g_U1581/A1   (AND4_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1581/ZN   (AND4_X1)
+ str   --   g_U1582/A4   (AND4_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1582/ZN   (AND4_X1)
+ str   --   g_U1386/A3   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1626/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=73.33%, #explained patterns: <failing=10, passing=127>
+ str   DS   g_U1642/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=10, passing=127>
+ stf   DS   g_U1321/ZN   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=66.67%, #explained patterns: <failing=10, passing=127>
+ stf   DS   g_U1643/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=13.33%, #explained patterns: <failing=0, passing=127>
+ str   DS   GAMMA_REG_2__SCAN_IN   (_PI)
+ str   --   g_U1500/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=13.33%, #explained patterns: <failing=0, passing=127>
+ str   DS   g_U1647/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ Defect 4: transition fault model, #faults=2, #failing_pat=1, #passing_pat=138, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=138>
+ stf   DS   COUNT_REG2_5__SCAN_IN   (_PI)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=138>
+ stf   DS   U1404   (_PO)
+ stf   --   g_U1404/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/91_stil/115.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/91_stil/115.stil with 0 errors.
+ End reading 140 patterns, CPU_time = 0.02 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/91_fail/115.diag

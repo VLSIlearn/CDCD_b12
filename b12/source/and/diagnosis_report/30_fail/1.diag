@@ -1,0 +1,82 @@
+run_diagnosis ./tmax_fail/30_fail/1.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/30_fail/1.fail
+ #failing_pat=2, #failures=2, #defects=2, #faults=13, CPU_time=0.01
+ Simulated : #failing_pat=2, #passing_pat=18, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=9, #failing_pat=1, #passing_pat=19, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa0   DS   g_U1323/ZN   (AND2_X1)
+ sa0   --   g_U1323/A1   (AND2_X1)
+ sa0   --   g_U1323/A2   (AND2_X1)
+ sa0   --   g_U1931/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa1   DS   g_U1930/ZN   (INV_X1)
+ sa0   --   g_U1930/A   (INV_X1)
+ sa1   --   g_U1931/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa0   DS   U1402   (_PO)
+ sa0   --   g_U1402/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa1   DS   g_U1942/ZN   (NAND2_X1)
+ sa0   --   g_U1942/A2   (NAND2_X1)
+ sa0   --   g_U1942/A1   (NAND2_X1)
+ sa1   --   g_U1402/A2   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa1   DS   g_U1905/ZN   (NAND2_X1)
+ sa0   --   g_U1905/A1   (NAND2_X1)
+ sa0   --   g_U1905/A2   (NAND2_X1)
+ sa0   --   g_U1632/ZN   (INV_X1)
+ sa1   --   g_U1632/A   (INV_X1)
+ sa1   --   g_U1541/A1   (NAND4_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa0   DS   g_U1543/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa1   DS   g_U1929/ZN   (NAND2_X1)
+ sa0   --   g_U1929/A1   (NAND2_X1)
+ sa0   --   g_U1929/A2   (NAND2_X1)
+ sa1   --   g_U1543/A3   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa0   DS   g_U1907/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa1   DS   g_U1907/A2   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=4, #failing_pat=1, #passing_pat=19, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa0   DS   g_U1324/ZN   (AND3_X1)
+ sa0   --   g_U1324/A1   (AND3_X1)
+ sa0   --   g_U1324/A2   (AND3_X1)
+ sa0   --   g_U1324/A3   (AND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa0   DS   g_U1333/ZN   (AND2_X1)
+ sa0   --   g_U1333/A1   (AND2_X1)
+ sa0   --   g_U1333/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa0   DS   U1477   (_PO)
+ sa0   --   g_U1477/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=19>
+ sa1   DS   g_U1683/ZN   (NAND2_X1)
+ sa0   --   g_U1683/A1   (NAND2_X1)
+ sa0   --   g_U1683/A2   (NAND2_X1)
+ sa1   --   g_U1477/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/30_stil/2.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/30_stil/2.stil with 0 errors.
+ End reading 74 patterns, CPU_time = 0.01 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/30_fail/2.diag

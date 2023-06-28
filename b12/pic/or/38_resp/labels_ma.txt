@@ -1,0 +1,4 @@
+or-38_resp_1.bmp 0.08333333333333333
+or-38_resp_2.bmp 0.16666666666666666
+or-38_resp_3.bmp 1.0
+or-38_resp_all.bmp 1

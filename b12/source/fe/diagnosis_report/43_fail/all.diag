@@ -1,0 +1,19 @@
+run_diagnosis ./tmax_fail/43_fail/all.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 341 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/43_fail/all.fail
+ #failing_pat=341, #failures=341, #defects=1, #faults=1, CPU_time=0.02
+ Simulated : #failing_pat=341, #passing_pat=68, #failures=341
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=341, #passing_pat=68, #failures=341
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=341, passing=68>
+ sa0   DS   g_U2018/ZN   (NAND2_X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/44_stil/0.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/44_stil/0.stil with 0 errors.
+ End reading 3 patterns, CPU_time = 0.09 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/44_fail/0.diag

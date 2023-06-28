@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/67_fail/285.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 401 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/67_fail/285.fail
+ #failing_pat=286, #failures=401, #defects=3, #faults=3, CPU_time=0.67
+ Simulated : #failing_pat=286, #passing_pat=91, #failures=401
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=286, #passing_pat=91, #failures=338
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=286, passing=91>
+ sa0   DS   g_U1606/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=45, #passing_pat=332, #failures=63
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=45, passing=332>
+ sa1   DS   g_U2023/ZN   (NAND2_X1)
+ sa0   --   g_U2023/A1   (NAND2_X1)
+ sa0   --   g_U2023/A2   (NAND2_X1)
+ sa1   --   g_U2024/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: transition fault model, #faults=1, #failing_pat=4, #passing_pat=373, #failures=8
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=373>
+ str   DS   g_U1526/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/67_stil/286.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/67_stil/286.stil with 0 errors.
+ End reading 378 patterns, CPU_time = 0.03 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/67_fail/286.diag

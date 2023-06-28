@@ -1,0 +1,3 @@
+ssl-28_resp_1.bmp 0.75
+ssl-28_resp_2.bmp 1.0
+ssl-28_resp_all.bmp 1

@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/67_fail/158.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 223 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/67_fail/158.fail
+ #failing_pat=159, #failures=223, #defects=3, #faults=3, CPU_time=0.36
+ Simulated : #failing_pat=159, #passing_pat=60, #failures=223
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=159, #passing_pat=60, #failures=185
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=159, passing=60>
+ sa0   DS   g_U1606/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=28, #passing_pat=191, #failures=38
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=28, passing=191>
+ sa1   DS   g_U2023/ZN   (NAND2_X1)
+ sa0   --   g_U2023/A1   (NAND2_X1)
+ sa0   --   g_U2023/A2   (NAND2_X1)
+ sa1   --   g_U2024/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: transition fault model, #faults=1, #failing_pat=2, #passing_pat=217, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=217>
+ str   DS   g_U1526/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/67_stil/159.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/67_stil/159.stil with 0 errors.
+ End reading 221 patterns, CPU_time = 0.09 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/67_fail/159.diag

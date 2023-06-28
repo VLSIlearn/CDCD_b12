@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/67_fail/159.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 224 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/67_fail/159.fail
+ #failing_pat=160, #failures=224, #defects=3, #faults=3, CPU_time=0.39
+ Simulated : #failing_pat=160, #passing_pat=61, #failures=224
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=160, #passing_pat=61, #failures=186
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=160, passing=61>
+ sa0   DS   g_U1606/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=28, #passing_pat=193, #failures=38
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=28, passing=193>
+ sa1   DS   g_U2023/ZN   (NAND2_X1)
+ sa0   --   g_U2023/A1   (NAND2_X1)
+ sa0   --   g_U2023/A2   (NAND2_X1)
+ sa1   --   g_U2024/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: transition fault model, #faults=1, #failing_pat=2, #passing_pat=219, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=219>
+ str   DS   g_U1526/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/67_stil/16.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/67_stil/16.stil with 0 errors.
+ End reading 23 patterns, CPU_time = 0.01 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/67_fail/16.diag

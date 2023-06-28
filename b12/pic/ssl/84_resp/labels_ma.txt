@@ -1,0 +1,4 @@
+ssl-84_resp_1.bmp 1.0
+ssl-84_resp_2.bmp 1.0
+ssl-84_resp_3.bmp 1.0
+ssl-84_resp_all.bmp 1

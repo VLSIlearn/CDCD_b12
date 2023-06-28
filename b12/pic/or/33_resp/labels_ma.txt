@@ -1,0 +1,9 @@
+or-33_resp_1.bmp 0.041666666666666664
+or-33_resp_2.bmp 0.08333333333333333
+or-33_resp_3.bmp 0.08333333333333333
+or-33_resp_4.bmp 0.16666666666666666
+or-33_resp_5.bmp 0.16666666666666666
+or-33_resp_6.bmp 1.0
+or-33_resp_7.bmp 1.0
+or-33_resp_8.bmp 1.0
+or-33_resp_all.bmp 1

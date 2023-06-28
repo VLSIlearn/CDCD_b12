@@ -1,0 +1,5 @@
+msl-99_resp_1.bmp 0.4
+msl-99_resp_2.bmp 0.4166666666666667
+msl-99_resp_3.bmp 1.0
+msl-99_resp_4.bmp 1.0
+msl-99_resp_all.bmp 1

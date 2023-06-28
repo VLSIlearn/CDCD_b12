@@ -1,0 +1,70 @@
+run_diagnosis ./tmax_fail/71_fail/18.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 58 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/71_fail/18.fail
+ #failing_pat=19, #failures=58, #defects=3, #faults=13, CPU_time=0.02
+ Simulated : #failing_pat=19, #passing_pat=10, #failures=58
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=18, #passing_pat=11, #failures=57
+ ------------------------------------------------------------------------------
+ match=96.61%, #explained patterns: <failing=18, passing=11>
+ sa1   DS   g_U1638/A1   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=89.06%, #explained patterns: <failing=18, passing=6>
+ sa1   DS   g_U1630/ZN   (INV_X1)
+ sa0   --   g_U1630/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=80.28%, #explained patterns: <failing=18, passing=1>
+ sa0   DS   g_U1524/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=65.52%, #explained patterns: <failing=18, passing=1>
+ sa0   DS   g_U1638/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=7, #failing_pat=1, #passing_pat=28, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa1   DS   g_R745_U9/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa0   DS   g_U1322/ZN   (AND2_X1)
+ sa0   --   g_U1322/A1   (AND2_X1)
+ sa0   --   g_U1322/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa0   DS   U1401   (_PO)
+ sa0   --   g_U1401/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa1   DS   g_U1946/ZN   (NAND2_X1)
+ sa0   --   g_U1946/A2   (NAND2_X1)
+ sa0   --   g_U1946/A1   (NAND2_X1)
+ sa1   --   g_U1401/A1   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa1   DS   g_U1924/ZN   (NAND3_X1)
+ sa0   --   g_U1924/A2   (NAND3_X1)
+ sa0   --   g_U1924/A3   (NAND3_X1)
+ sa0   --   g_U1924/A1   (NAND3_X1)
+ sa1   --   g_U1926/A1   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa0   DS   g_U1926/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa0   DS   g_R745_U9/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: transition fault model, #faults=2, #failing_pat=2, #passing_pat=27, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=27>
+ stf   DS   GAMMA_REG_0__SCAN_IN   (_PI)
+ stf   --   g_U1494/A2   (OR2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=27>
+ stf   DS   g_U1494/ZN   (OR2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/71_stil/180.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/71_stil/180.stil with 0 errors.
+ End reading 239 patterns, CPU_time = 0.02 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/71_fail/180.diag

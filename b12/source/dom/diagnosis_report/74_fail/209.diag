@@ -1,0 +1,37 @@
+run_diagnosis ./tmax_fail/74_fail/209.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 210 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/74_fail/209.fail
+ #failing_pat=210, #failures=210, #defects=1, #faults=1, CPU_time=0.06
+ Simulated : #failing_pat=210, #passing_pat=74, #failures=210
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=210, #passing_pat=74, #failures=210
+ ------------------------------------------------------------------------------
+ match=98.13%, #explained patterns: <failing=210, passing=70>
+ sa1   DS   U1387   (_PO)
+ sa1   --   g_U1387/ZN   (NAND4_X1)
+ sa0   --   g_U1387/A1   (NAND4_X1)
+ sa0   --   g_U1387/A3   (NAND4_X1)
+ sa0   --   g_U1387/A4   (NAND4_X1)
+ sa0   --   g_U1387/A2   (NAND4_X1)
+ sa0   --   g_U1387_TMP/ZN   (AND2_X1)
+ sa0   --   g_U1387_TMP/A1   (AND2_X1)
+ sa0   --   g_U1387_TMP/A2   (AND2_X1)
+ sa0   --   g_U1583/ZN   (AND4_X1)
+ sa0   --   g_U1583/A3   (AND4_X1)
+ sa0   --   g_U1583/A1   (AND4_X1)
+ sa0   --   g_U1583/A4   (AND4_X1)
+ sa0   --   g_U1583/A2   (AND4_X1)
+ sa0   --   g_U2028/ZN   (NAND2_X1)
+ sa0   --   g_U2029/ZN   (NAND2_X1)
+ sa0   --   g_U2030/ZN   (NAND2_X1)
+ sa0   --   g_U1583_TMP/ZN   (AND2_X1)
+ sa0   --   g_U1583_TMP/A2   (AND2_X1)
+ sa0   --   g_U1583_TMP/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/74_stil/21.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/74_stil/21.stil with 0 errors.
+ End reading 33 patterns, CPU_time = 0.02 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/74_fail/21.diag

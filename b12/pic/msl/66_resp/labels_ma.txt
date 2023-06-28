@@ -1,0 +1,11 @@
+msl-66_resp_1.bmp 0.125
+msl-66_resp_2.bmp 0.045454545454545456
+msl-66_resp_3.bmp 0.16071428571428573
+msl-66_resp_4.bmp 0.625
+msl-66_resp_5.bmp 0.75
+msl-66_resp_6.bmp 0.75
+msl-66_resp_7.bmp 0.875
+msl-66_resp_8.bmp 0.875
+msl-66_resp_9.bmp 0.875
+msl-66_resp_10.bmp 1.0
+msl-66_resp_all.bmp 1

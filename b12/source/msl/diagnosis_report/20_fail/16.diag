@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/20_fail/16.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 18 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/20_fail/16.fail
+ #failing_pat=17, #failures=18, #defects=2, #faults=3, CPU_time=0.06
+ Simulated : #failing_pat=17, #passing_pat=96, #failures=18
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=12, #passing_pat=101, #failures=12
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=12, passing=101>
+ sa1   DS   g_R785_U11/ZN   (NAND2_X1)
+ sa0   --   g_R785_U11/A2   (NAND2_X1)
+ sa0   --   g_R785_U11/A1   (NAND2_X1)
+ sa0   --   g_R785_U20/ZN   (NAND2_X1)
+ sa0   --   g_R785_U21/ZN   (NAND2_X1)
+ sa1   --   g_U1854/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=2, #failing_pat=6, #passing_pat=107, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=107>
+ sa0   DS   U1413   (_PO)
+ sa0   --   g_U1413/ZN   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=107>
+ sa1   DS   g_U1873/ZN   (NAND2_X1)
+ sa0   --   g_U1873/A2   (NAND2_X1)
+ sa0   --   g_U1873/A1   (NAND2_X1)
+ sa1   --   g_U1413/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/20_stil/2.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/20_stil/2.stil with 0 errors.
+ End reading 97 patterns, CPU_time = 0.02 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/20_fail/2.diag

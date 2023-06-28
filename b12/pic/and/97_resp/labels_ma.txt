@@ -1,0 +1,10 @@
+and-97_resp_1.bmp 0.02857142857142857
+and-97_resp_2.bmp 0.1
+and-97_resp_3.bmp 0.1
+and-97_resp_4.bmp 0.8333333333333334
+and-97_resp_5.bmp 1.0
+and-97_resp_6.bmp 1.0
+and-97_resp_7.bmp 1.0
+and-97_resp_8.bmp 1.0
+and-97_resp_9.bmp 1.0
+and-97_resp_all.bmp 1

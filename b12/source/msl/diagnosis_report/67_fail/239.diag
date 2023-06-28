@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/67_fail/239.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 345 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/67_fail/239.fail
+ #failing_pat=240, #failures=345, #defects=3, #faults=3, CPU_time=0.55
+ Simulated : #failing_pat=240, #passing_pat=82, #failures=345
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=240, #passing_pat=82, #failures=288
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=240, passing=82>
+ sa0   DS   g_U1606/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=41, #passing_pat=281, #failures=57
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=41, passing=281>
+ sa1   DS   g_U2023/ZN   (NAND2_X1)
+ sa0   --   g_U2023/A1   (NAND2_X1)
+ sa0   --   g_U2023/A2   (NAND2_X1)
+ sa1   --   g_U2024/A1   (NAND2_X1)
+ ------------------------------------------------------------------------------
+ Defect 3: transition fault model, #faults=1, #failing_pat=4, #passing_pat=318, #failures=8
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=318>
+ str   DS   g_U1526/ZN   (NAND3_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/67_stil/24.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/67_stil/24.stil with 0 errors.
+ End reading 34 patterns, CPU_time = 0.03 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/67_fail/24.diag

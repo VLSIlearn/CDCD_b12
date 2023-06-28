@@ -1,0 +1,10 @@
+ssl-26_resp_1.bmp 0.16666666666666666
+ssl-26_resp_2.bmp 0.16666666666666666
+ssl-26_resp_3.bmp 0.16666666666666666
+ssl-26_resp_4.bmp 0.2
+ssl-26_resp_5.bmp 0.2
+ssl-26_resp_6.bmp 0.2
+ssl-26_resp_7.bmp 0.3333333333333333
+ssl-26_resp_8.bmp 1.0
+ssl-26_resp_9.bmp 1.0
+ssl-26_resp_all.bmp 1
